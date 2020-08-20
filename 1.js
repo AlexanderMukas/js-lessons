@@ -27,3 +27,14 @@ let myObj = {key1: "This is ", key2: "JavaScript"};
 myObj.key3 = 'Some else';
 myObj.key4 = 'Some else again';
 console.log(myObj);
+
+// Logic like Java
+let count = 4;
+if(count === 5){
+    console.log("This is very good");
+} else if(count === 4){
+    console.log("Not bad today");
+} else {
+    console.log("Learning not for you!");
+}
+
