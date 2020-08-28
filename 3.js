@@ -26,9 +26,22 @@ var Stack = function(){
         return result;
     }
 
-
-
-
-
-
+    this.size = function(){
+        return this.count;
+    }
+    // Returns the value at the end of the stack - last eliment
+    this.peek = function(){
+        return this.storage[this.count-1];
+    }
 }
+
+let myStack = new Stack();
+
+myStack.push(1);
+myStack.push(2);
+myStack.push(3);
+console.log(myStack);
+console.log(`Size of stack : ${myStack.size()} !`);
+console.log(myStack.peek());
+console.log(myStack.pop());
+console.log(myStack.peek());
