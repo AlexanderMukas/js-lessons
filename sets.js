@@ -40,7 +40,7 @@ function mySet(){
 
     // this method will return the union of two sets
     this.union = function(otherSet){
-        let unionSet = new Set();
+        let unionSet = new mySet();
         let firstSet = this.values();
         let secondSet = otherSet.values();
         firstSet.forEach( element => unionSet.add(element));
@@ -54,6 +54,20 @@ function mySet(){
         });
         return unionSet;
     };
+
+    // this method will return the intersection of two sets as a new set
+    this.intersection = function(otherSet){
+        let intersectionSet = new mySet();
+        let firstSet = this.values();
+        firstSet.forEach( function(e){
+            if(otherSet.has(e)){
+                intersectionSet.add(e);
+            }
+        } );
+        return intersectionSet;
+    };
+    
+
 }
 
 const oneSet = new mySet();
@@ -72,4 +86,4 @@ console.log(twoSet.values());
 
 const unSet = oneSet.union(twoSet);
 console.log(unSet.values());
-console.log(unSet.size);
+console.log(unSet.size());
