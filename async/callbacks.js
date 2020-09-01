@@ -1,6 +1,6 @@
 const posts = [
-{title : 'Post One', body: 'This is post number one'},
-{title : 'Post One', body: 'This is post number one'}
+{title : 'Post One', body: 'This is post number 1'},
+{title : 'Post Two', body: 'This is post number 2'}
 ];
 
 function getPosts(){
