@@ -1,7 +1,7 @@
 // functions: push, pop, peak, length
 var letters = []; // this is our stack
 
-var word = "Alexander"; // example - racecar
+var word = "kazak"; // example - racecar
 var rword = "";      // reverseWord
 
 //put letters of word into stack
