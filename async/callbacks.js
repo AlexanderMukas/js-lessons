@@ -11,7 +11,15 @@ function getPosts(){
         });
         document.body.innerHTML = output;
     }, 3000);
+}
 
+function createPost(post) {
+    setTimeout( () => {
+        posts.push(post);
+    } , 5000);
 }
 
 getPosts();
+
+createPost( {title: 'Post Three', body: 'This is post three'});
+``
