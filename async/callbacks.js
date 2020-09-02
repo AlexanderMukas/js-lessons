@@ -10,16 +10,16 @@ function getPosts(){
             output += `<li>${post.title}</li>`;
         });
         document.body.innerHTML = output;
-    }, 3000);
+    }, 1000);
 }
 
-function createPost(post) {
+function createPost(post, callback) {
     setTimeout( () => {
         posts.push(post);
-    } , 5000);
+        callback();
+    } , 3000);
 }
 
-getPosts();
+//getPosts();
 
-createPost( {title: 'Post Three', body: 'This is post three'});
-``
+createPost( {title: 'Post Three', body: 'This is post three'}, getPosts );
