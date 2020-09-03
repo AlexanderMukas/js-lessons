@@ -22,7 +22,7 @@ const posts = [
                 if(!error){
                     resolve();    // all ok!
                 } else {
-                    reject();    // all not ok, ERROR!
+                    reject('Error: Something went wrong! :( ');    // all not ok, ERROR!
                 }
 
             } , 3000);
@@ -31,5 +31,7 @@ const posts = [
     
     //getPosts();
     
-    createPost( {title: 'Post Three', body: 'This is post three'}, getPosts );
+    //createPost( {title: 'Post Three', body: 'This is post three'}, getPosts );
+    createPost( {title: 'Post Three', body: 'This is post three'} )
+        .then( getPosts );
     
