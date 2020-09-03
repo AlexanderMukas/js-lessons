@@ -7,7 +7,7 @@ const posts = [
         setTimeout( () => {
             let output = '';
             posts.forEach( (post, index) => {
-                output += `<li>${post.title}</li>`;
+                output += `<li>${post.body}</li>`;
             });
             document.body.innerHTML = output;
         }, 1000);
@@ -18,7 +18,7 @@ const posts = [
             setTimeout( () => {
                 posts.push(post);
 
-                const error = false;
+                const error = false; // or true
                 if(!error){
                     resolve();    // all ok!
                 } else {
@@ -33,5 +33,6 @@ const posts = [
     
     //createPost( {title: 'Post Three', body: 'This is post three'}, getPosts );
     createPost( {title: 'Post Three', body: 'This is post three'} )
-        .then( getPosts );
+        .then( getPosts )
+        .catch( (err) => console.log(err));   //catch the error end write in console log
     
