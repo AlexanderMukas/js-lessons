@@ -4,7 +4,6 @@ class Person {
     constructor(firstName, lastName){
         this.firstName = firstName;
         this.lastName = lastName;
-        this.count++;
         console.log("Constructor done..." + this.count);
     };
 
