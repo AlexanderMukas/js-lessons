@@ -5,15 +5,12 @@ class Person {
         this.firstName = firstName;
         this.lastName = lastName;
         this.count++;
-        console.log("Constructor done...")
-    }
+        console.log("Constructor done..." + this.count);
+    };
 
     sayName(){
         console.log(`${this.firstName} ${this.lastName} - good person and human!`);
-    }
-    let this.firstName;
-    //let lastName;
-
+    };
 }
 
 let obj1 = new Person("Ivan", "Ivanov");
