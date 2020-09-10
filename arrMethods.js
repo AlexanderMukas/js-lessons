@@ -1,4 +1,4 @@
-// Filter, map, find, forEach, some, every, reduce,
+// Filter, map, find, forEach, some, every, reduce, includes methods here!
 // FILTER METHOD
 const items = [
     {name: 'Bike', price: 100},
@@ -57,3 +57,9 @@ const total = items.reduce( (currentTotal, item) => {
 }, 0);                                    // zero is currentTotal
 
 console.log(total);
+
+let items2 = [1,2,3,4,5];
+
+//const includesTwo = items2.includes(2)  // true, 2 includes in list items2
+const includesTwo = items2.includes(6)  // false, 6 not includes
+console.log(includesTwo);
