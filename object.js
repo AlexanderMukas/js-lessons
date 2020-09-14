@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 let car = {
     color: 'red',
     ride : function() {
@@ -25,7 +25,7 @@ let person = {
         if(lastName === "Gates"){
             return "Microsoft";
         } else {
-            return "I don't know name of Company."
+            return "I don't know name of Company!."
         }
     }
 }

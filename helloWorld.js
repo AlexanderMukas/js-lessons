@@ -13,7 +13,7 @@ let myArr = [1,2,3,4,5,6,7,8,9];
 
 // print every item of list/array
 myArr.forEach( item => console.log(item));
-myArr.forEach( item => console.log(item*10));
+myArr.forEach( item => console.log(item*2));
 // methods of List
 console.log( myArr.length )
 // Pop - delete last item
