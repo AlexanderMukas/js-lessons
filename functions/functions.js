@@ -51,3 +51,15 @@ function sumAll(...all) {
 sumAll(1,2,3,4,5); // [1,2,3,4,5]
 
 // 4. closure (замыкания)
+// for private var
+function createMember(name){
+    return function(lastName){
+        console.log(name + lastName);
+    };
+};
+
+const logWithLastName = createMember('Alex ');
+console.log(logWithLastName('Mukas'));
+console.log(logWithLastName('Ivanov'));
+
+createMember('Sasha ')('Korpatov');
