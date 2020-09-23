@@ -19,7 +19,7 @@ greet2('Alexa');   // working
 console.dir(greet);
 
 
-// 2. Anonymous functions, Arrow functions
+// 2. Anonymous functions, Arrow functions (ES6)
 // setInterval, setTimeout
 let counter = 0;
 
@@ -33,3 +33,21 @@ const interval = setInterval( () => {
 
 const pow = num => num ** 2;
 console.log(`pow(5): ${pow(5)}`); // 25
+
+// 3. Default params (ES6)
+const sum = (a = 0, b = 0) => a+b;
+console.log('sum(5,9) ->', sum(5,9) );
+console.log( 'sum(a = 0, b = 0) ->', sum() );
+
+function sumAll(...all) {
+    //console.log(all);
+    let result = 0;
+    for (let num of all){
+        result+=num;
+    }
+    console.log('sumAll(1,2,3,4,5) ->',result);
+    //all.reduce()    
+};
+sumAll(1,2,3,4,5); // [1,2,3,4,5]
+
+// 4. closure (замыкания)
