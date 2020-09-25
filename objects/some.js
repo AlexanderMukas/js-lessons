@@ -7,10 +7,5 @@ const person = {
         console.log('Greet from person')
     }
 }
-console.log(temp + 'Hm');
+
 person.greet();
-
-const temp = person.languages.array.forEach(lang => {
-    console.log(`This person know ${lang}`);
-});
-
