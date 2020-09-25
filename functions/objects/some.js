@@ -4,13 +4,14 @@ const person = {
     isProgrammer: true,
     languages: ['ukrainian', 'russian', 'english'],
     greet(){
-        console.log('Greet from person')
+        console.log('Greet from person!')
     }
-}
-console.log(temp + 'Hm');
-person.greet();
+};
+// console.log('Hello!')
+// console.log(temp + 'Hm');
+// person.greet();
 
-const temp = person.languages.array.forEach(lang => {
-    console.log(`This person know ${lang}`);
-});
+// const temp = person.languages.array.forEach(lang => {
+//     console.log(`This person know ${lang}`);
+// });
 
