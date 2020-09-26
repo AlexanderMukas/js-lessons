@@ -19,7 +19,7 @@ const logger = {
         console.log('Object Keys:', Object.keys(this) )
     },
 
-    //4:11:28 
+    /// 4:11:28 
     keysAndValues() {
         Object.keys(this).forEach( key => {
             console.log(`${key} : ${this[key]}`);
@@ -31,10 +31,11 @@ const logger = {
             console.log('----- START -----');
         };
 
-        Object.keys(this).forEach( key => {
-            console.log(`${key} : ${this[key]}`);
+        Object.keys(this).forEach( (key, index, array) => {
+            console.log(`${index} ||| ${key} : ${this[key]}`);
 
-            if(between){
+            /// index = array.length - 1 -> this is last element of array
+            if(between && index !== array.length - 1){
                 console.log('-----------------');
             }
         })
@@ -44,6 +45,10 @@ const logger = {
 
     }
 }
+// bind, call, apply function of Object
+
+// const bound = logger.keys.bind(person);
+// bound();
 
 // logger.keys.call(person);
 // logger.keysAndValues.call(person);
@@ -51,5 +56,6 @@ let top = true;
 let between = true;
 let bottom = true;
 
-// call(this, param1, param2, param3)
-logger.withParams.call(person, top, between, bottom);
+/// call(this, param1, param2, param3)
+// logger.withParams.call(person, top, between, bottom);
+logger.withParams.apply(person, [top, between, bottom] );
