@@ -18,13 +18,15 @@ const logger = {
     keys() {
         console.log('Object Keys:', Object.keys(this) )
     },
-
-    // keysAndValues() {
-    //     Object.keys(this).forEach( (key) => {
-    //         console.log(`key: ${this[key]}`);
-    //     })
+    
+    //4:11:28 
+    keysAndValues() {
+        Object.keys(this).forEach( (key) => {
+            console.log(`key: ${key}, value: ${this[key]}`);
+        })
         
-    // }
+    }
 }
 
-logger.keys.call(person);
+// logger.keys.call(person);
+logger.keysAndValues.call(person);
