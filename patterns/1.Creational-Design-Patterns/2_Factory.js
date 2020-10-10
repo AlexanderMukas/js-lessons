@@ -43,11 +43,14 @@ class MemberFactory {
     }
 
 };
+
 const factory = new MemberFactory();
 const members = [
     factory.create('Alexander Mukas', 'premium'),
     factory.create('Mikhail Voronin', 'standard'),
-    factory.create('Ivan Voronin', 'simple')
+    factory.create('Ivan Voronin', 'simple'),
+    factory.create('Peter'),
+    factory.create('Vasilisa', 'standard')
 ];
 
 members.forEach( member => member.define() );
