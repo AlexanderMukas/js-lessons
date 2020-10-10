@@ -37,10 +37,10 @@ class MemberFactory {
         // add @Override like Java
         member.type = type;
         member.define = function() {
-            console.log(` name: ${this.name},\n type:${this.type}, cost: ${this.cost}`);
+            console.log(`${this.name} (${this.type}) : ${this.cost} UAH`);
         }
         return member;
-    } 
+    }
 
 };
 const factory = new MemberFactory();
@@ -50,4 +50,4 @@ const members = [
     factory.create('Ivan Voronin', 'simple')
 ];
 
-console.log(members);
+members.forEach( member => member.define() );
