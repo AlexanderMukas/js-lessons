@@ -35,11 +35,11 @@ class CalcAdapter {
 };
 
 const oldCalc = new OldCalc();
-console.log(oldCalc.operations(10, 5, 'add') ); // 15
+console.log(oldCalc.operations(3, 7, 'add') ); // 10
 
 const newCalc = new NewCalc();
-console.log(newCalc.add(10, 5) );               // 15
+console.log(newCalc.add(3, 7) );               // 10
 
 const adapter = new CalcAdapter();
-console.log(adapter.operations(25, 10, 'sub') ); // 15
+console.log(adapter.operations(25, 15, 'sub') ); // 10
 
