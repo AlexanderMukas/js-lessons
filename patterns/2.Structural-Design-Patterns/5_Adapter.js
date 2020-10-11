@@ -42,4 +42,6 @@ console.log(newCalc.add(3, 7) );               // 10
 
 const adapter = new CalcAdapter();
 console.log(adapter.operations(25, 15, 'sub') ); // 10
+console.log(adapter.calc.add(25, 15) );          // 40
+
 
