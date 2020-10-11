@@ -1,4 +1,4 @@
-// 6. Decorator
+//// 6. Decorator
 // add some new in Object and return (like alien inject)
 
 class Server {
