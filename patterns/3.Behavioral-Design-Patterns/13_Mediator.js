@@ -40,3 +40,10 @@ class ChatRoom{
         }
     }
 }
+
+const vlad = new User('Vladlen');
+const vasiliy = new User('Vasiliy');
+const elena = new User('Elena');
+
+const room = new ChatRoom();
+
