@@ -26,3 +26,15 @@ class SelfCar extends Vehicle {
         this.timeTaken = 3;
     }
 }
+
+class Commute {
+    travel(transport) {
+        return transport.travelTine();
+    }
+}
+
+const commute = new Commute();
+
+console.log ( commute.travel(new Bus()) );      // 10
+console.log ( commute.travel(new Taxi()) );     // 5
+console.log ( commute.travel(new SelfCar()) );  // 3
