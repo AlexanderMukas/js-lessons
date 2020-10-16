@@ -47,3 +47,12 @@ const elena = new User('Elena');
 
 const room = new ChatRoom();
 
+room.register(vlad);
+room.register(vasiliy);
+room.register(elena);
+
+vlad.send('Hello', elena);
+elena.send('Hello hello', vlad);
+vasiliy.send('Hello to everybody!');
+
+
