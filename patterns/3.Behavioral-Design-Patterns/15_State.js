@@ -73,3 +73,7 @@ console.log( traffic.sign() );
 traffic.change();
 
 console.log( traffic.sign() );
+
+traffic.change();
+
+console.log( traffic.sign() );
