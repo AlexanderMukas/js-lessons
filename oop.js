@@ -1,10 +1,11 @@
 // oop - class
 "use strict";
+let count = 0;
 class Person {
     constructor(firstName, lastName){
         this.firstName = firstName;
         this.lastName = lastName;
-        console.log("Constructor done..." + this.count);
+        console.log(  `Constructor done...${++count}`);
     };
 
     sayName(){
@@ -37,10 +38,10 @@ class BlackCat extends Animal {
     }
 
     talk(){
-        console.log( `Say meow of ${black} animal` );
+        console.log( `Say meow of ${this.color} animal` );
     }
 }
 
-pet1 = new BlackCat('Murzik', 3);
+const pet1 = new BlackCat('Murzik', 3);
 pet1.walk();
 pet1.talk();
