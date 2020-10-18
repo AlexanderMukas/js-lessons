@@ -30,6 +30,17 @@ class Animal {
     talk() {};
 }
 
-class Cat extends Animal {
-    constructor(name, age) 
+class BlackCat extends Animal {
+    constructor(name, age){
+        super(name, age);
+        this.color = 'black'
+    }
+
+    talk(){
+        console.log( `Say meow of ${black} animal` );
+    }
 }
+
+pet1 = new BlackCat('Murzik', 3);
+pet1.walk();
+pet1.talk();
