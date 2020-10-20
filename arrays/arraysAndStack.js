@@ -95,12 +95,12 @@ var cars = new Array("Saab", "Volvo", "BMW");
 // Some Arrays (24.09.2020)
 //const cars = ["BMW", "Volvo", "Infiniti"];
 const peoples = [
-    {name: "Ivan", salary: 3000},
+    {name: "Alex", salary: 5000},
     {name: "Elena", salary: 5030},
-    {name: "Alexander", salary: 9920}
+    {name: "Ivan", salary: 5920}
 ];
 
-const index = cars.indexOf('BMW');
+const index = cars.indexOf('Volvo');
 // console.log(index); // 2
 
 // a... full syntax
