@@ -1,4 +1,5 @@
 var cars = new Array("Saab", "Volvo", "BMW");
+let cars2 = ['Mercedes', 'ZAZ', 'Skoda'];
 // var x = cars.push("OPEL");
 // var y =  cars.pop(); // BMW
 // var z = cars.shift() // delete Saab
@@ -100,8 +101,11 @@ const peoples = [
     {name: "Ivan", salary: 5920}
 ];
 
-const index = cars.indexOf('Volvo');
-// console.log(index); // 2
+const indexCars = cars.indexOf('Volvo');
+const indexCars2 = cars2.indexOf('ZAZ');
+console.log('index2: ', indexCars2);
+console.log('value: ', cars2[indexCars2]);
+// console.log(indexCars); // 2
 
 // a... full syntax
 // const index2 = peoples.findIndex( (person) => {
