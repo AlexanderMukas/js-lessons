@@ -4,7 +4,9 @@ class MyMath {
         this.num = initValue;
     }
     square() { return this.num ** 2};
-    cube () { return this.num ** 3};
+    cube() { return this.num ** 3};
+    increment() { return this.num++ };
+    decrement() { return this.num-- }
 };
 
 class Command {
