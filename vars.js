@@ -61,6 +61,10 @@ var sum = arr.reduce((a, b) => a + b);
 var even = arr.filter(v => v % 2 == 0); 
 // [6, 0, 18]
 
+const x = 20;
+const y; // error
+x = 22; // error
+
 var double = arr.map(v => v * 2);       
 // [10, 12, 26, 0, 2, 36, 46]
 
