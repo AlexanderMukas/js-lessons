@@ -5,7 +5,7 @@ const items = [
     {name: 'TV', price: 200},
     {name: 'Album', price: 10},
     {name: 'Book', price: 5},
-    {name: 'Phone', price: 500},
+    {name: 'Phone', price: 666},
     {name: 'Computer', price: 1000},
     {name: 'Keyboard', price: 25}
 ];
