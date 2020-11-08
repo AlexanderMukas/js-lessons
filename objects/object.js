@@ -6,7 +6,7 @@ let car = {
 };
 
 function corolChange(Object){
-    Object.color = "violet";
+    Object.color = "green";
 };
 
 console.log(`Color of car is : ${car.color}`);
