@@ -1,5 +1,6 @@
 const person = {
     name: 'Alexander',
+    lastName: 'Mukas',
     age: '31',
     isProgrammer: true,
     languages: ['ukrainian', 'russian', 'english'],
