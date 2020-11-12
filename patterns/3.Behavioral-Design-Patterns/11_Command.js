@@ -27,6 +27,7 @@ const x = new Command( new MyMath(2) );
 console.log ( x.execute( 'square') );
 console.log ( x.execute( 'cube') );
 console.log ( x.execute( 'cube') );
+console.log ( x.execute( 'decrement') );
 console.log ( x.execute( 'increment') );
 console.log ( x.execute( 'decrement') );
 console.log( x.commandsExecuted);
